@@ -1,0 +1,10 @@
+.Best-seller-container {
+  padding-top: 100px;
+  background-color: palegoldenrod;
+  user-select: none;
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

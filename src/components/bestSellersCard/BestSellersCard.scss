@@ -1,0 +1,21 @@
+.bestSellerCard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  padding: 10px;
+  .clothe-img {
+    width: 200px;
+    height: 200px;
+  }
+  .fav-cart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    cursor: pointer;
+    .cart-icon:active{
+      transform:translateY(3px);
+    }
+  }
+}

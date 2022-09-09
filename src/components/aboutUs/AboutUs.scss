@@ -1,0 +1,16 @@
+.aboutUs-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: palegoldenrod;
+    height: 100vh;
+    .about-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        padding: 0px 15px;
+        text-align: center;
+    }
+}

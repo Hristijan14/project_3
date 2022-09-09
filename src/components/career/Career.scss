@@ -1,0 +1,30 @@
+.career-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: palegoldenrod;
+    user-select: none;
+    .career-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+        .career-para{
+            border:2px solid white;
+            padding: 0px 10px;
+            margin-bottom: 20px;
+        }
+        .career-mail{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+        }
+        .career-img{
+            width: 500px;
+            height: 300px;
+            border:2px solid white;
+        }
+    }
+}

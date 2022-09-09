@@ -1,0 +1,40 @@
+.favorites-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: palegoldenrod;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    padding: 30px 0;
+    gap:10px;
+    user-select: none;
+    .empty-favorites{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: larger;
+        font-weight: bolder;
+    }
+    .favorite-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        border: 2px solid white;
+        .favorite-img{
+            width: 200px;
+            height: 200px;
+        }
+        .defav-cart {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            cursor: pointer;
+            .cart-icon:active{
+              transform:translateY(3px);
+            }
+          }
+    }
+}
