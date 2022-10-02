@@ -8,6 +8,55 @@
     padding: 30px 0;
     gap:10px;
     user-select: none;
+    position: relative;
+    .checkout-container{
+        position: absolute;
+        border: 5px solid white;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        height: 117%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form-section-checkout{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: palegoldenrod;
+            border:3px solid white;
+            padding: 20px;
+            .card-details-section{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                gap:3px;
+                .smallwidth{
+                    width: 30px;
+                }
+                .expirationDate{
+                    width: 100px;
+                }
+            }
+            .checkout-btn{
+                padding:15px;
+                background-color: palegoldenrod;
+                border:3px solid white;
+                margin-bottom: 15px;
+                margin-right: 10px;
+                cursor: pointer;
+                font-size: larger;
+                font-weight: bold;
+                &:hover{
+                    background-color: rgb(66, 209, 209);
+                }
+            }
+        }
+    }
     .empty-cart{
         display: flex;
         justify-content: center;
