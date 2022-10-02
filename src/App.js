@@ -15,11 +15,11 @@ import WomenBags from "./components/womenBags/WomenBags";
 import WomenMakeup from "./components/womenMakeup/WomenMakeup";
 import WomenDresses from "./components/womenDresses/WomenDresses";
 import WomenHeels from "./components/womenHeels/WomenHeels";
-import { useState } from "react";
+import useLocalStorage from "./hooks/useLocalStorage";
 
 function App() {
-  const [cartItems, setCartItems] = useState([]);
-  const [favItems, setFavItems] = useState([]);
+  const [cartItems, setCartItems] = useLocalStorage("cartItem", []);
+  const [favItems, setFavItems] = useLocalStorage("favItem", []);
 
   const handleAddToCart = (product) => {
     const ProductExist = cartItems.find((item) => item.id === product.id);
